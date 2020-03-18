@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    config:
+      file-extension: yml
+# web服务器配置
+server:
+  port: 9093
+#spring:
+#  cloud:
+#    # 云端配置项如何覆盖本地配置项，这里配置成除了环境变量传入的参数，其余全部被覆盖
+#    config:
+#      # 开启覆盖
+#      allow-override: true
+## uncode计划任务配置
+#    zookeeper:
+#      connect-string: 127.0.0.1:2181
+#      config:
+#        enabled: true
+#      timeout: 4000
+uncode:
+  schedule:
+    zkConnect: localhost:2181
+    rootPath: /uncode/schedule
+    zkSessionTimeout: 30000
+    zkUsername: scheduler
+    zkPassword: pa4sw0rd
+    enabled: true

@@ -1,0 +1,10 @@
+server:
+  port: 9094
+uncode:
+  schedule:
+    zkConnect: localhost:2181
+    rootPath: /uncode/schedule
+    zkSessionTimeout: 60000
+    zkUsername: scheduler
+    zkPassword: pa4sw0rd
+    enabled: true
